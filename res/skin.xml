@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="1200,820" mininfo="960,600">
+	<Font shared="true" id="0" name="Microsoft YaHei UI" size="13" default="true" />
+	<Font shared="true" id="1" name="Microsoft YaHei UI" size="12" />
+	<Font shared="true" id="2" name="Microsoft YaHei UI" size="13" bold="true" />
+	<Font shared="true" id="3" name="Microsoft YaHei UI" size="20" bold="true" />
+	<Font shared="true" id="4" name="Microsoft YaHei UI" size="16" bold="true" />
+	<Font shared="true" id="5" name="Microsoft YaHei UI" size="14" />
+	<Font shared="true" id="6" name="Segoe MDL2 Assets" size="20" />
+	<Font shared="true" id="7" name="Microsoft YaHei UI" size="12" bold="true" />
+	<Font shared="true" id="8" name="Segoe MDL2 Assets" size="14" />
+	<Font shared="true" id="9" name="Microsoft YaHei UI" size="28" bold="true" />
+	<Font shared="true" id="10" name="Microsoft YaHei UI" size="22" bold="true" />
+	<Font shared="true" id="11" name="Microsoft YaHei UI" size="14" bold="true" />
+
+	<Default shared="true" name="VScrollBar" value="width=&quot;8&quot; bkcolor=&quot;#00FFFFFF&quot; thumbcolor=&quot;#FFC0C4CC&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; bordersize=&quot;0&quot; borderround=&quot;4,4&quot;" />
+
+	<VerticalLayout name="root" bkcolor="#FFFFFFFF">
+		<HorizontalLayout name="header" height="56" bkcolor="#FFFFFFFF" bordercolor="#FFE4E7ED" bordersize="0,0,0,1" inset="20,0,16,0" childvalign="vcenter" childpadding="10">
+			<Label name="logo" text="E" width="28" height="28" font="2" textcolor="#FFFFFFFF" bkcolor="#FF409EFF" borderround="6,6" textpadding="0,0,0,1" align="center" />
+			<Label text="Element" font="3" textcolor="#FF303133" width="92" />
+			<Label text="DuiLib" font="1" textcolor="#FF409EFF" padding="6,4,0,0" width="50" />
+			<Button name="editMenu" text="编辑" width="60" height="30" font="1" textcolor="#FF606266" hottextcolor="#FF409EFF" bkcolor="#00000000" hotbkcolor="#FFF5F7FA" borderround="4,4" padding="12,0,0,0" />
+			<Control />
+			<Label text="duilib 原生控件 · Element 风格演示" font="1" textcolor="#FF909399" />
+		</HorizontalLayout>
+		<HorizontalLayout name="body">
+			<HorizontalLayout name="componentHost">
+				<VerticalLayout name="navHost" width="220" bkcolor="#FFFFFFFF" bordercolor="#FFE4E7ED" bordersize="0,0,1,0" inset="10,10,10,12" childpadding="1" vscrollbar="true" />
+				<VerticalLayout name="pageHost" inset="32,24,32,32" childpadding="18" vscrollbar="true" />
+			</HorizontalLayout>
+			<VerticalLayout name="themeHost" visible="false" bkcolor="#FFFFFFFF" inset="0,0,0,0" childpadding="0" vscrollbar="true" />
+			<VerticalLayout name="iconHost" visible="false" bkcolor="#FFFFFFFF" inset="32,24,32,32" childpadding="18" vscrollbar="true" />
+		</HorizontalLayout>
+		<Control name="statusSpacer" height="24" />
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,19 @@
+# 构建产物
+/build/
+/bin/
+/dist/
+/.vs/
+
+# Visual Studio
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# 运行时输出
+*.dmp
+*.log
+
+# 系统文件
+Thumbs.db
+Desktop.ini

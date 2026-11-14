@@ -1,0 +1,51 @@
+#pragma code_page(65001)
+#include "Resource.h"
+#include <winres.h>
+
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+IDR_SKIN_XML XML "skin.xml"
+IDI_APP ICON "app.ico"
+IDR_DEMO_IMAGE RCDATA "demo-image.png"
+IDR_ICON_16 RCDATA "icons\\building-lock-16.png"
+IDR_ICON_20 RCDATA "icons\\building-lock-20.png"
+IDR_ICON_24 RCDATA "icons\\building-lock-24.png"
+IDR_ICON_32 RCDATA "icons\\building-lock-32.png"
+IDR_ICON_40 RCDATA "icons\\building-lock-40.png"
+IDR_ICON_48 RCDATA "icons\\building-lock-48.png"
+
+#include "IconCatalog.rc"
+
+1 24 "app.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "DuiLibElement"
+            VALUE "FileDescription", "DuiLib Element 组件演示"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "DuiLibElement"
+            VALUE "OriginalFilename", "DuiLibElement.exe"
+            VALUE "ProductName", "DuiLibElement"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END

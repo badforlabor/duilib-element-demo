@@ -1,0 +1,6 @@
+# MSVC 资源脚本按 CRLF 检出
+*.rc text eol=crlf
+
+# 第三方目录由 git subtree 引入，保留上游原始字节，
+# 避免换行规范化在后续 subtree pull 时产生全文件 diff
+/thirdparty/** -text
